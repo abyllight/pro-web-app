@@ -7,6 +7,9 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
+    <link rel="shortcut icon" href="{{ asset('favicon2.ico') }}" type="image/x-icon">
+    <link rel="icon" href="{{ asset('favicon2.ico') }}" type="image/x-icon">
+
     <title>Прокуратура города Нур-Султан</title>
 
     <!-- Scripts -->
