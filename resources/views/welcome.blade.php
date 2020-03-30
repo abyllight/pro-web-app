@@ -3,9 +3,6 @@
 @section('content')
     <div class="container">
         <div class="row justify-content-center">
-            @foreach($users as $user)
-                {{ $user->first_name }}
-            @endforeach
             <div class="col-md-6">
                 @if(session()->has('message'))
                     <div class="alert {{session('alert') ?? 'alert-info'}}">
