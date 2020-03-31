@@ -20,6 +20,10 @@ class WelcomeController extends Controller
         return view('welcome');
     }
 
+    public function showComplaint()
+    {
+        return view('complaint');
+    }
     /**
      * Show the form for creating a new resource.
      *
@@ -36,7 +40,7 @@ class WelcomeController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\RedirectResponse
      */
-    public function store(Request $request)
+    public function storeComplaint(Request $request)
     {
         $ticket = new Ticket();
         $ticket->full_name = $request['fullName'];

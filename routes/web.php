@@ -14,7 +14,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', 'WelcomeController@index')->name('welcome');
-Route::post('/', 'WelcomeController@store')->name('save');
+Route::get('/complaint', 'WelcomeController@showComplaint')->name('complaint-show');
+Route::post('/complaint', 'WelcomeController@storeComplaint')->name('complaint-store');
 
 Auth::routes([
     'register' => false,
