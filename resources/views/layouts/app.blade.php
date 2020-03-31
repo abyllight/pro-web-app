@@ -18,6 +18,15 @@
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
+    <style>
+        .logot{
+            display: block;
+            float: right;
+            margin-top: -2px;
+            margin-left: 8px;
+            line-height: 1.2em;
+        }
+    </style>
 </head>
 <body>
     <div id="app">
@@ -25,7 +34,7 @@
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
                     <img src="{{ asset('logo.png') }}" alt="Логотип" width="40">
-                    <span class="logot">Прокуратура</span>
+                    <span class="logot">Прокуратура <br> города Нур-Султан</span>
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
